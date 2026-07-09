@@ -1,8 +1,4 @@
-# Berry-Knowledge-Base-
-A email knowledge base for sales training and customer communication.
-
 ## 🌸 Overview
-
 This project is an AI-assisted email memory and draft generation workflow designed to turn historical mailbox data into reusable contact knowledge.
 The system extracts structured email records from Microsoft Graph, groups messages by external participant, builds AI-generated contact profiles from historical conversations, and uses those profiles to support context-aware draft replies inside an automation workflow.
 The goal is not full auto-send, but faster, more consistent, and better-informed draft generation with human review in the loop.
@@ -71,6 +67,8 @@ flowchart TD
     G1 --> H["Power Automate Workflow"]
     H --> H1["identify sender"]
     H --> H2["load matching profile"]
+
+
     H --> H3["generate context-aware draft"]
 
     H3 --> I["Human Review before send"]
